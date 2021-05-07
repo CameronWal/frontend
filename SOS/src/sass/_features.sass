@@ -1,0 +1,75 @@
+.features-text__list
+    list-style: none
+    font-family: 'Bebas Neue', cursive
+    margin-bottom: 258px
+
+.features-text__list li 
+    position: relative
+    padding: 20px 0 20px 40px
+    color: #D29D25
+    font-variant: small-caps
+    font-size: 36px
+    line-height: 36px
+    letter-spacing: 2px
+    cursor: pointer
+
+.features-text__list p
+    color: #fff
+    font-size: 18px
+    line-height: 22px
+    font-weight: normal
+    font-family: 'Open Sans', sans-serif
+
+.features-text__list li:before 
+    position: absolute
+    width: 7px
+    height: 7px
+    border-radius: 50%
+    background: #fff
+    content: ""
+    left: 0
+    transition: .3s ease-in-out
+    top: 27px
+
+.features-text__list li:after 
+    position: absolute
+    border-left: 1px dotted #4F5151
+    width: 1px
+    bottom: -12px
+    content: ""
+    left: 3px
+    top: 48px
+
+.features-text__list li:hover:before
+    box-shadow: 0 0 0 10px rgba(0,0,0,.2)
+.features-text__list li:last-child:after
+    content: none
+.features
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),url(../img/bgfeatures.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    &-block
+        display: flex
+        justify-content: flex-end
+    &-text
+        margin-top: 169px
+        display: flex
+        flex-direction: column
+        &__subtitle
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 24px
+            letter-spacing: 2px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-bottom: 8px
+        &__title
+            font-style: normal
+            font-weight: 400
+            font-size: 80px
+            line-height: 80px
+            letter-spacing: 3px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-bottom: 70px

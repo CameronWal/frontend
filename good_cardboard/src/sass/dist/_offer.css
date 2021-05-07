@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.offer {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url(../src/img/Clip-2.png) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 2;
+  /* Затемнение фона */
+}
+.offer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+.offer-text {
+  text-align: center;
+}
+.offer-text__title {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.offer-text__subtitle {
+  margin-bottom: 27px;
+  font-size: 26px;
+  font-weight: 300;
+}
+.offer-text__form {
+  padding: 30px 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.offer-text__tel {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-offer__input {
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: 35%;
+}

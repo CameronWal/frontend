@@ -1,0 +1,39 @@
+$active-color: #fd9c28
+.production
+    padding-top: 87px
+    padding-bottom: 90px
+    &-slider
+        position: relative
+        z-index: 2
+        &_top
+            margin-bottom: 13px
+            height: 377px
+            overflow-y: hidden
+        &_buttom
+            padding-left: 30px
+            padding-right: 30px
+            height: 78px // обрезка картинки в слайдере
+            overflow-y: hidden // обрезка картинки в слайдере
+            img
+                margin: 0 6px
+    &-text
+        max-resolution: 379px
+        &__title
+            position: relative
+            padding-top: 20px
+            padding-bottom: 20px
+            font-size: 28px
+            font-weight: 300
+            color: #ffffff
+            background-color: $active-color
+            margin-left: -10%
+            margin-top: 19px
+            margin-bottom: 28px
+            padding-left: 10%
+            width: 110%
+            z-index: -1
+        &__descr
+            font-size: 16px
+            font-weight: 300
+            line-height: 24px
+            text-align: justify
